@@ -1,190 +1,444 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
-      <!--Main section-->
-      <section class="section main-section parallax-scene-js" style="background: url('static/images/bg-1-1700x803.jpg') no-repeat center center; background-size:cover;">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8 col-12">
-              <div class="main-decorated-box text-center text-xl-left">
-                <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">the</span><span class="big font-weight-bold d-inline-flex offset-right-170">best</span><span class="biggest d-block d-xl-flex font-weight-bold">Solutions.</span></h1>
-                <div class="decorated-subtitle text-italic text-white wow slideInLeft">Swift and quicker Operations</div>
-              </div>
-            </div>
-            <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center" href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+<!--Main section-->
+<section
+  class="section main-section parallax-scene-js"
+  style="
+    background: url('static/images/bg-1-1700x803.jpg') no-repeat center center;
+    background-size: cover;
+  "
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-12">
+        <div class="main-decorated-box text-center text-xl-left">
+          <h1
+            class="text-white text-xl-center wow slideInRight"
+            data-wow-delay=".3s"
+          >
+            <span
+              class="align-top offset-top-30 d-inline-block font-weight-light prefix-text"
+              >The</span
+            ><span class="big font-weight-bold d-inline-flex offset-right-170"
+              >Best</span
+            ><span class="biggest d-block d-xl-flex font-weight-bold"
+              >Solutions.</span
+            >
+          </h1>
+          <div
+            class="decorated-subtitle text-italic text-white wow slideInLeft"
+          >
+            Quicker, Faster Operations
           </div>
         </div>
-        <div class="decorate-layer">
-          <div class="layer-1">
-            <div class="layer" data-depth=".20"><img src="{% static 'images/parallax-item-1-563x532.png' %}" alt="" width="563" height="266"/>
+      </div>
+      <div class="col-12 text-center offset-top-75" data-wow-delay=".2s">
+        <a
+          class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+          href="#"
+          data-custom-scroll-to="about"
+          ><span class="fa-chevron-down"></span
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="decorate-layer">
+    <div class="layer-1">
+      <div class="layer" data-depth=".20">
+        <img
+          src="{% static 'images/parallax-item-1-563x532.png' %}"
+          alt=""
+          width="563"
+          height="266"
+        />
+      </div>
+    </div>
+    <div class="layer-2">
+      <div class="layer" data-depth=".30">
+        <img
+          src="{% static 'images/parallax-item-2-276x343.png' %}"
+          alt=""
+          width="276"
+          height="171"
+        />
+      </div>
+    </div>
+    <div class="layer-3">
+      <div class="layer" data-depth=".40">
+        <img
+          src="{% static 'images/parallax-item-3-153x144.png' %}"
+          alt=""
+          width="153"
+          height="72"
+        />
+      </div>
+    </div>
+    <div class="layer-4">
+      <div class="layer" data-depth=".20">
+        <img
+          src="{% static 'images/parallax-item-4-69x74.png' %}"
+          alt=""
+          width="69"
+          height="37"
+        />
+      </div>
+    </div>
+    <div class="layer-5">
+      <div class="layer" data-depth=".40">
+        <img
+          src="{% static 'images/parallax-item-5-72x75.png' %}"
+          alt=""
+          width="72"
+          height="37"
+        />
+      </div>
+    </div>
+    <div class="layer-6">
+      <div class="layer" data-depth=".30">
+        <img
+          src="{% static 'images/parallax-item-6-45x54.png' %}"
+          alt=""
+          width="45"
+          height="27"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!--About-->
+<section class="section section-sm position-relative" id="about">
+  <div class="container">
+    <div class="row row-30">
+      <div class="col-lg-6">
+        <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
+          <img
+            src="{% static 'images/home-1-570x703.jpg' %}"
+            alt=""
+            width="570"
+            height="351"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="block-sm offset-top-45">
+          <div class="section-name wow fadeInRight" data-wow-delay=".2s">
+            About us
+          </div>
+          <h3
+            class="wow fadeInLeft text-capitalize devider-bottom"
+            data-wow-delay=".3s"
+          >
+            SageSERV <span class="text-primary"> Security</span>
+          </h3>
+          <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
+            Sage Serv is a forensic analytics company under the Mace Group that
+            specializes in providing advanced data analytics and digital
+            forensics services. Our team of experts utilize cutting-edge
+            technology and methodologies to extract, analyze, and interpret data
+            from a variety of sources, including digital devices, servers, and
+            cloud-based platforms. We offer a range of services to both private
+            and public sector organizations, including cybercrime
+            investigations, data breach response, eDiscovery, and digital
+            forensics for legal proceedings. Our team is highly skilled in
+            analyzing and interpreting large amounts of data, and we have a
+            proven track record of helping organizations solve complex problems
+            and uncover hidden insights.
+          </p>
+          <p
+            class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp"
+            data-wow-delay=".4s"
+          >
+            Our training programs are designed to provide a comprehensive
+            understanding of digital forensics, data analytics, and cybercrime
+            investigation, and are taught by experienced industry professionals.
+          </p>
+          <a
+            class="button-width-190 button-primary button-circle button-lg button offset-top-30"
+            href="#"
+            >read more</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="decor-text decor-text-1">ABOUT</div>
+</section>
+<!--Features-->
+<section class="section custom-section position-relative section-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-7 col-lg-7 col-12">
+        <div class="section-name wow fadeInRight">Features</div>
+        <h3
+          class="text-capitalize devider-left wow fadeInLeft"
+          data-wow-delay=".2s"
+        >
+          Why Businesses<span class="text-primary"> Choose us</span>
+        </h3>
+        <p>
+          With over 10 years of experience in business consulting, we have a lot
+          to offer to our clients. Here are some reasons why companies worldwide
+          choose us.
+        </p>
+        <div class="row row-15">
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="box-default">
+              <div class="box-default-title">Car Tracking</div>
+              <p class="box-default-description">
+                To make car monitoring in Nigeria simpler, SageSERV employs a
+                clever AI telematics system. With minimum data costs, manage and
+                monitor your fleet or car remotely. Get the best automobile
+                tracking software/hardware today. We also help with car theft
+                tracing for security organizations and anyone looking for lost
+                or stolen cars.
+              </p>
+              <span
+                class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"
+              ></span>
             </div>
           </div>
-          <div class="layer-2">
-            <div class="layer" data-depth=".30"><img src="{% static 'images/parallax-item-2-276x343.png' %}" alt="" width="276" height="171"/>
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="box-default">
+              <div class="box-default-title">Find My Device</div>
+              <p class="box-default-description">
+                In Nigeria, mobile devices are stolen daily, and many of these
+                theft problems go unresolved because 70% of these cases go
+                unreported. With simply your IMEI, we can pinpoint the location
+                of your stolen mobile device for a reasonable fee, and we offer
+                a round-the-clock service.
+              </p>
+              <span
+                class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"
+              ></span>
             </div>
           </div>
-          <div class="layer-3">
-            <div class="layer" data-depth=".40"><img src="{% static 'images/parallax-item-3-153x144.png' %}" alt="" width="153" height="72"/>
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="box-default">
+              <div class="box-default-title">Stolen Cryptotrace</div>
+              <p class="box-default-description">
+                Our analysts on the ground will evaluate criminal data and
+                cryptocurrency movements from the point of compromise to the end
+                destination, wherever it may be. We are partnered with Cipher
+                trace (MASTERCARD) and committed to the tracing and recovery of
+                crypto assets.
+              </p>
+              <span
+                class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"
+              ></span>
             </div>
           </div>
-          <div class="layer-4">
-            <div class="layer" data-depth=".20"><img src="{% static 'images/parallax-item-4-69x74.png' %}" alt="" width="69" height="37"/>
-            </div>
-          </div>
-          <div class="layer-5">
-            <div class="layer" data-depth=".40"><img src="{% static 'images/parallax-item-5-72x75.png' %}" alt="" width="72" height="37"/>
-            </div>
-          </div>
-          <div class="layer-6">
-            <div class="layer" data-depth=".30"><img src="{% static 'images/parallax-item-6-45x54.png' %}" alt="" width="45" height="27"/>
+          <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="box-default">
+              <div class="box-default-title">ATTP</div>
+              <p class="box-default-description">
+                The Anti-Money Laundering Trace Protocol was created in
+                collaboration with Pegasus to combat terrorism and the
+                laundering of criminally obtained money.
+              </p>
+              <span
+                class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"
+              ></span>
             </div>
           </div>
         </div>
-      </section>
-      <!--About-->
-      <section class="section section-sm position-relative" id="about">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-lg-6">
-              <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img src="{% static 'images/home-1-570x703.jpg' %}" alt="" width="570" height="351"/>
-              </div>
-            </div>
-            <div class="col-lg-6 col-12">
-              <div class="block-sm offset-top-45">
-                <div class="section-name wow fadeInRight" data-wow-delay=".2s">About us</div>
-                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s">SageSERV <span class="text-primary"> Security</span></h3>
-                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium</p>
-                <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit.</p><a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="#">read more</a>
-              </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="image-left-side wow slideInRight" data-wow-delay=".5s">
+    <img
+      src="{% static 'images/home-2-636x480.jpg' %}"
+      alt=""
+      width="636"
+      height="240"
+    />
+  </div>
+  <div class="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">
+    features
+  </div>
+</section>
+<!--Counters-->
+<section class="section bg-image-2">
+  <div class="container section-md">
+    <div class="row row-30 text-center">
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="counter-classic">
+          <div class="counter-classic-number">
+            <span
+              class="icon-lg novi-icon offset-right-10 mercury-icon-time"
+            ></span
+            ><span class="counter text-white" data-speed="2000">2011</span>
           </div>
+          <div class="counter-classic-title">Year of Establishment</div>
         </div>
-        <div class="decor-text decor-text-1">ABOUT</div>
-      </section>
-      <!--Features-->
-      <section class="section custom-section position-relative section-md">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-7 col-lg-7 col-12">
-              <div class="section-name wow fadeInRight">our features</div>
-              <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Why Businesses<span class="text-primary"> Choose us</span></h3>
-              <p>With over 10 years of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.</p>
-              <div class="row row-15">
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
-                  <div class="box-default">
-                    <div class="box-default-title">Car Tracking</div>
-                    <p class="box-default-description">To make car monitoring in Nigeria simpler, SageSERV employs a clever AI telematics system. With minimum data costs, manage and monitor your fleet or car remotely. Get the best automobile tracking software/hardware today. We also help with car theft tracing for security organizations and anyone looking for lost or stolen cars.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
-                  </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="box-default">
-                    <div class="box-default-title">Find My Device</div>
-                    <p class="box-default-description">In Nigeria, mobile devices are stolen daily, and many of these theft problems go unresolved because 70% of these cases go unreported. With simply your IMEI, we can pinpoint the location of your stolen mobile device for a reasonable fee, and we offer a round-the-clock service.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
-                  </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
-                  <div class="box-default">
-                    <div class="box-default-title">Stolen Cryptotrace</div>
-                    <p class="box-default-description">Our analysts on the ground will evaluate criminal data and cryptocurrency movements from the point of compromise to the end destination, wherever it may be. We are partnered with Cipher trace (MASTERCARD) and committed to the tracing and recovery of crypto assets.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
-                  </div>
-                </div>
-                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
-                  <div class="box-default">
-                    <div class="box-default-title">ATTP</div>
-                    <p class="box-default-description">The Anti-Money Laundering Trace Protocol was created in collaboration with Pegasus to combat terrorism and the laundering of criminally obtained money.</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="counter-classic">
+          <div class="counter-classic-number">
+            <span
+              class="icon-lg novi-icon offset-right-10 mercury-icon-folder"
+            ></span
+            ><span class="counter text-white" data-speed="2000">100+</span>
           </div>
+          <div class="counter-classic-title">Successful Projects</div>
         </div>
-        <div class="image-left-side wow slideInRight" data-wow-delay=".5s"><img src="{% static 'images/home-2-636x480.jpg' %}" alt="" width="636" height="240"/>
-        </div>
-        <div class="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">features</div>
-      </section>
-      <!--Counters-->
-      <section class="section bg-image-2">
-        <div class="container section-md">
-          <div class="row row-30 text-center">
-            <div class="col-xl-3 col-sm-6 col-12">
-              <div class="counter-classic">
-                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span><span class="counter text-white" data-speed="2000">2011</span>
-                </div>
-                <div class="counter-classic-title">Year of Establishment</div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12">
-              <div class="counter-classic">
-                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-folder"></span><span class="counter text-white" data-speed="2000">100+</span>
-                </div>
-                <div class="counter-classic-title">Successful Projects</div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12">
-              <div class="counter-classic">
-                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-users"></span><span class="counter text-white" data-speed="2000">20+</span><span class="symbol text-white">+</span>
-                </div>
-                <div class="counter-classic-title">Global Partners</div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12">
-              <div class="counter-classic">
-                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-group"></span><span class="counter text-white" data-speed="2000">1500+</span>
-                </div>
-                <div class="counter-classic-title">Cliently Board</div>
-              </div>
-            </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="counter-classic">
+          <div class="counter-classic-number">
+            <span
+              class="icon-lg novi-icon offset-right-10 mercury-icon-users"
+            ></span
+            ><span class="counter text-white" data-speed="2000">20+</span
+            ><span class="symbol text-white">+</span>
           </div>
+          <div class="counter-classic-title">Global Partners</div>
         </div>
-      </section>
-      <!--Pricing-->
-      
-      <!--Owl Carousel-->
-      <section class="section section-md bg-gray-lighten">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="section-name wow fadeInRight text-center" data-wow-delay=".2s">testimonials</div>
-              <h3 class="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s">What People Say<span class="text-primary"> About Us</span></h3>
-              <div class="owl-carousel review-carousel" data-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="true" data-autoplay="false">
-                <div class="item">
-                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="{% static 'images/user-1-216x216.jpg' %}" alt="" width="216" height="108"/>
-                  </div>
-                  <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                    <p>I was impressed by the quality of what your specialists did. They quickly found out what was the main problem of my company and helped me form a correct strategy, which worked perfectly and set my business on the right path.</p>
-                    <div class="item-subsection"><span class="item-subsection-title devider-left">Heather Perry</span><span>Regular Client</span></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="{% static 'images/user-2-216x216.jpg' %}" alt="" width="216" height="108"/>
-                  </div>
-                  <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                    <p>I appreciate what you’ve done to help my small company develop and thrive in that market niche that we specialize in. Your business consulting experts are the best in the whole industry and I’m going to recommend you to my partners!</p>
-                    <div class="item-subsection"><span class="item-subsection-title devider-left">Donald Hughes</span><span>Regular Client</span></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="{% static 'images/user-3-216x216.jpg' %}" alt="" width="216" height="108"/>
-                  </div>
-                  <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                    <p>My cooperation with your team helped me understand that you really care about your clients – it was proved by a lot of positive reviews already – and that's why I chose you. Thank you for a great job, you are true professionals!</p>
-                    <div class="item-subsection"><span class="item-subsection-title devider-left">Anthony Parker</span><span>Regular Client</span></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><img src="{% static 'images/user-4-216x216.jpg' %}" alt="" width="216" height="108"/>
-                  </div>
-                  <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                    <p>Two years after СonsultBiz’s involvement, we are remarkably successful and the leader in served markets. This brought industry knowledge, best practices, and real-world solutions to the intricate challenges we faced.</p>
-                    <div class="item-subsection"><span class="item-subsection-title devider-left">Jennifer Coleman</span><span>Regular Client</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12">
+        <div class="counter-classic">
+          <div class="counter-classic-number">
+            <span
+              class="icon-lg novi-icon offset-right-10 mercury-icon-group"
+            ></span
+            ><span class="counter text-white" data-speed="2000">1500+</span>
           </div>
+          <div class="counter-classic-title">Cliently Board</div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Pricing-->
 
-      {% endblock content %}
-    
+<!--Owl Carousel-->
+<section class="section section-md bg-gray-lighten">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <div
+          class="section-name wow fadeInRight text-center"
+          data-wow-delay=".2s"
+        >
+          testimonials
+        </div>
+        <h3
+          class="wow fadeInLeft text-capitalize text-center"
+          data-wow-delay=".3s"
+        >
+          What People Say<span class="text-primary"> About Us</span>
+        </h3>
+        <div
+          class="owl-carousel review-carousel"
+          data-items="1"
+          data-sm-items="1"
+          data-md-items="1"
+          data-lg-items="1"
+          data-xl-items="1"
+          data-xxl-items="1"
+          data-dots="true"
+          data-nav="false"
+          data-stage-padding="0"
+          data-loop="false"
+          data-margin="0"
+          data-mouse-drag="true"
+          data-autoplay="false"
+        >
+          <div class="item">
+            <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+              <img
+                src="{% static 'images/user-1-216x216.jpg' %}"
+                alt=""
+                width="216"
+                height="108"
+              />
+            </div>
+            <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+              <p>
+                I was impressed by the quality of what your specialists did.
+                They quickly found out what was the main problem of my company
+                and helped me form a correct strategy, which worked perfectly
+                and set my business on the right path.
+              </p>
+              <div class="item-subsection">
+                <span class="item-subsection-title devider-left"
+                  >Heather Perry</span
+                ><span>Regular Client</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+              <img
+                src="{% static 'images/user-2-216x216.jpg' %}"
+                alt=""
+                width="216"
+                height="108"
+              />
+            </div>
+            <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+              <p>
+                I appreciate what you’ve done to help my small company develop
+                and thrive in that market niche that we specialize in. Your
+                business consulting experts are the best in the whole industry
+                and I’m going to recommend you to my partners!
+              </p>
+              <div class="item-subsection">
+                <span class="item-subsection-title devider-left"
+                  >Donald Hughes</span
+                ><span>Regular Client</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+              <img
+                src="{% static 'images/user-3-216x216.jpg' %}"
+                alt=""
+                width="216"
+                height="108"
+              />
+            </div>
+            <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+              <p>
+                My cooperation with your team helped me understand that you
+                really care about your clients – it was proved by a lot of
+                positive reviews already – and that's why I chose you. Thank you
+                for a great job, you are true professionals!
+              </p>
+              <div class="item-subsection">
+                <span class="item-subsection-title devider-left"
+                  >Anthony Parker</span
+                ><span>Regular Client</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-preview wow fadeInDown" data-wow-delay=".2s">
+              <img
+                src="{% static 'images/user-4-216x216.jpg' %}"
+                alt=""
+                width="216"
+                height="108"
+              />
+            </div>
+            <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+              <p>
+                Two years after СonsultBiz’s involvement, we are remarkably
+                successful and the leader in served markets. This brought
+                industry knowledge, best practices, and real-world solutions to
+                the intricate challenges we faced.
+              </p>
+              <div class="item-subsection">
+                <span class="item-subsection-title devider-left"
+                  >Jennifer Coleman</span
+                ><span>Regular Client</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
