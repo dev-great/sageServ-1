@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y8urt6jh74#uf@gphuldzab4i+5nr_7jd%vbxsuriy(ivd#inf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['llonamusik.com']
 #SECURE_SSL_REDIRECT = True
 
 
